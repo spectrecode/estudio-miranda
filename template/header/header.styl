@@ -1,0 +1,477 @@
+.header
+	.inner-header
+		display none
+		@media screen and (min-width:992px)
+			display flex
+			flex-flow row wrap
+			justify-content space-between
+			padding 20px 0px
+			.inner-row
+				display flex
+				flex-flow column wrap
+				justify-content space-around
+				.row
+					.inner-redes
+						display flex
+						flex-flow row wrap
+						justify-content flex-start
+						.row
+							margin-left 10px
+							a
+								font 13px robotoregular
+								color #435663
+								text-transform uppercase
+								text-decoration none
+								font-weight 900
+								&:hover
+									color #C4CCCF
+									transition 0.5s all ease
+							&:last-child
+								margin-top 9px
+	.header-movil
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		padding 5px 10px 10px
+		.inline
+			display inline-flex
+		.row
+			margin-left 10px
+			&:first-child
+				margin-left 0
+		.idioma
+			padding-top 6px
+			padding-right 5px
+			a
+				font 13px robotoregular
+				color #435663
+				text-transform uppercase
+				text-decoration none
+				font-weight 900
+		@media screen and (min-width 992px)
+			display none
+	.inner-logo
+		display flex
+		flex-flow row wrap
+		justify-content center
+		padding-bottom 15px
+		.row
+			a
+				figure
+					img
+						width 160px
+		@media screen and (min-width:992px)
+			display none
+	.suscribete
+		position absolute
+		z-index 500
+		top 10px
+		left 10px
+		display none
+		@media screen and (min-width:992px)
+			position absolute
+			z-index 500
+			top 200px
+			left 122px
+			display none
+		.inner-suscribete
+			width 300px
+			background #43607A
+			@media screen and (min-width:992px)
+				width 430px
+				background #43607A
+			h1
+				color blanco
+				font 29px robotoregular
+				padding 30px 20px 0px 20px
+				span
+					color blanco
+					font 29px robotobold
+			form
+				padding 10px 20px 0px 20px
+				input
+					padding-left 10px
+					width 100%
+					border 1px solid #547BB2
+					margin 10px 0px
+					border-radius 0px
+					height 33px
+					background #43607A
+					font 15px robotoregular
+					color #C6C6C6
+					@media screen and (min-width:992px)
+						padding-left 10px
+						width 330px
+						border 1px solid #547BB2
+						margin 10px 0px
+						border-radius 0px
+						height 33px
+						background #43607A
+						font 15px robotoregular
+						color #C6C6C6
+			.botonera
+				text-align center
+				padding-bottom 30px
+				button
+					background #547BB2
+					width 125px
+					font 12px robotomedium
+					border-color transparent
+					margin-top 10px
+			.cerrar
+				a
+					text-decoration none
+					color #8E8E8E
+					position absolute
+					right 0
+					top 0
+					font 20px 
+			p
+				text-align justify
+				color blanco
+				font 12px robotoregular
+				padding 30px 30px 0px 25px
+	.flicker-example
+		.flicks
+			li
+				background-position center
+				padding 5px
+				@media screen and (min-width:992px)
+					background-position initial
+	.mainMenuMovil
+		display block
+		position absolute
+		z-index 200
+		width 100%
+		@media screen and (min-width: 992px)
+			display none
+		.inner-option
+			display flex
+			flex-flow row wrap
+			justify-content space-between
+			padding 0
+			height 40px
+			overflow hidden
+			background #435663
+			a
+				position relative
+				top 10px
+				left 10px
+				&.menuoption
+					display block
+					height 25px
+					width 35px
+					.line
+						background blanco
+						height 4px
+						width 100%
+						margin-bottom 4px
+						&:last-child
+							margin-bottom 0	
+			input
+				width 180px
+				border-radius 0
+				border-color transparent
+				padding 0 5px
+				background #C4CCCF
+				color #435663
+				font 13px robotoregular
+				font-weight 900
+		nav
+			display none
+			height 100%
+			background #435663
+			ul
+				li
+					border-bottom 1px solid rgba(93,93,93,0.2)
+					padding 10px 0px
+					a
+						margin-left 30px
+						text-decoration none
+						color blanco
+						font 13px robotoregular
+						font-weight 800
+	.inner-menu
+		left 0
+		right 0
+		position absolute
+		height 40px
+		width 1070px
+		margin auto
+		z-index 200
+		@media screen and (min-width:992px)
+			position absolute
+			height 40px
+			width 1070px
+			margin auto
+			z-index 200
+			background url("../image/fondo-menu.png") no-repeat right 0
+			left 0
+			right 0
+		.menu
+			display flex
+			flex-flow row wrap
+			.row
+				form
+					input
+						font 12px robotoblack
+						padding 10px
+						background #C4CCCF
+						border-radius 0
+						width 140px
+						height 18px
+						border 1px solid #c4cccf
+						color #435663
+						@media screen and (min-width:992px)
+							font 12px robotoblack
+							padding 10px
+							background #C4CCCF
+							border-radius 0
+							width 120px
+							height 18px
+							border 1px solid #c4cccf
+							color #435663
+						@media screen and (min-width:1200px)
+							font 12px robotoblack
+							padding 10px
+							background #C4CCCF
+							border-radius 0
+							width 140px
+							height 18px
+							border 1px solid #c4cccf
+							color #435663
+				ul
+					width 900px
+					li
+						@media screen and (min-width:992px)
+							display inline-block
+							color blanco
+							padding 10px 15px
+						@media screen and (min-width:1200px)
+							display inline-block
+							color blanco
+							padding 10px 19px
+						a
+							text-decoration none
+							font 12px robotoblack
+							color #435663 
+							&:hover
+								color #C4CCCF
+						.active
+							color #C4CCCF
+						.blanco
+							color blanco
+			.menuG
+				display none
+				@media screen and (min-width:992px)
+					display block
+	.ocultar
+			display none
+			@media screen and (min-width:992px)
+				display block
+	.flicker-example
+		ul
+			height 413px
+			li
+				.inner-banner
+					text-align center
+					margin-top 11px
+					@media screen and (min-width:992px)
+						text-align center
+						margin-top 80px
+					.row
+						h1
+							color #D1D5E1
+							font 30px robotoregular
+							@media screen and (min-width:992px)
+								color #D1D5E1
+								font 75px robotoregular
+							span
+								color blanco
+								font 30px robotobold
+								@media screen and (min-width:992px)
+									color blanco
+									font 75px robotobold
+						p
+							font-size 16px
+							font-weight 400
+							font-family "Roboto"
+							color blanco
+							padding-top 40px
+						button
+							margin-top 8px
+							font 16px robotomedium
+							color #435663
+							background #CACACA
+							border none
+							padding 15px 70px
+							margin-left 40px
+					.innerdescripcion
+						width 90%
+						margin auto
+						padding-left 8px
+						padding-right 8px
+						@media screen and (min-width:992px)
+							width 670px
+							margin auto
+		.dot-navigation
+			display none
+	.inicio
+		background-image transparent//url("../image/fondo-libros.jpg")
+		background-repeat no-repeat
+		background-size cover
+		padding-bottom 20px
+		.container
+			.innerLibros
+				padding-top 30px
+				p
+					color #808080
+					font-size 14px
+					font-weight 100
+					font-family "Roboto" 
+					text-align center
+					padding-left 17px
+					@media screen and (min-width:992px)
+						text-align left
+						color #808080
+				.filtros
+					margin-top 0px
+					display flex
+					flex-flow row wrap
+					justify-content center
+					@media screen and (min-width:992px)
+						margin-top 0px
+						display flex
+						flex-flow row wrap
+						justify-content space-between
+					.row
+						padding 10px
+						text-align center
+						@media screen and (min-width:992px)
+							padding-top 20px
+							text-align left
+						button
+							background #445664
+							font 14px robotomedium
+							width 145px
+							height 40px
+							color blanco
+							border none
+						form
+							select
+								width 100%
+								border 1px solid #435664
+								height 40px
+								font 13px robotoregular
+								color #898989
+								padding-left 5px
+								margin 5px 4px
+								@media screen and (min-width:992px)
+									width auto	
+									height 40px
+									font 13px robotoregular
+									color #898989
+									padding-left 15px
+							button
+								background #C5CCD0
+								border-radius 2px
+								border 1px solid #435664
+								color #445664
+								cursor pointer
+								padding-top 10px
+								padding-bottom 11px
+								padding-left 15px
+								padding-right 15px
+								font 13px robotomedium
+								width 125px
+								height 40px
+								margin-top 15px
+								@media screen and (min-width:992px)
+									background #C5CCD0
+									border-radius 2px
+									border 1px solid #435664
+									color #445664
+									cursor pointer
+									padding-top 10px
+									padding-bottom 11px
+									padding-left 15px
+									padding-right 15px
+									font 13px robotomedium
+									width 125px
+									height 40px
+									margin-top 0px
+					.linea
+						display none
+						@media screen and (min-width:992px)
+							display block
+							border-left 2px solid #445664
+							width 2px
+							height 80px
+				.mesa
+					display flex
+					flex-flow row wrap
+					justify-content center
+					background-size 100%
+					width 100%
+					padding-top 25px
+					@media screen and (min-width:992px)
+						display flex
+						flex-flow row wrap
+						justify-content center
+						background url("../image/mesa.png") no-repeat bottom left
+						background-size 100%
+						width 850px
+						padding-top 25px
+					.row
+						width 170px
+						top 10px
+						position relative
+						padding-bottom 47px
+						margin-left 30px
+						p
+							font 14px robotoregular
+							color #435663
+						span
+							font 13px robotoregular
+							color #808080
+						.plus
+							margin-left 125px
+							bottom 90px
+							position absolute
+							.single-image
+								img
+									width 256px
+									height auto
+						.inner-text
+							padding-bottom 15px
+				.paginado
+					text-align center
+					padding-top 20px
+					width 100%
+					@media screen and (min-width:992px)
+						text-align center
+						padding-top 50px
+						width 850px
+					a
+						text-decoration none
+						font 20px robotomedium
+						color #878787
+						margin 0px 10px
+						padding 5px 10px
+						&:hover
+							color blanco
+							background #435663
+							font 20px robotomedium
+						&:last-child
+							color #878787
+							margin 0
+							display inline-block
+							padding 0
+							&:hover
+								background transparent
+					.active
+						color blanco
+						background #435663
+						padding 5px 10px
+						margin 0px 5px
+						font 20px robotomedium

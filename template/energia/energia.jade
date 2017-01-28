@@ -1,0 +1,39 @@
+doctype html
+html(lang="es", ng-app="miranda")
+	head
+		title Energía | Biblioteca Virtual
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width,initial-scale=1")
+		link(href="./bower_components/normalize-css/normalize.css" rel="stylesheet")
+		link(href="./node_modules/rocket-flicker/css/flicker.min.css" rel="stylesheet" type="text/css")
+		//link(href="./bower_components/flickerplate/css/flickerplate.css" rel="stylesheet")
+		link(href="./public/css/app.css", rel="stylesheet")
+		link(type="image/x-icon" rel="icon" href="http://mafirma.pe/wp-content/themes/mafirma/favicon2.png")
+		link(href='//fonts.googleapis.com/css?family=Roboto:400,100,700,100italic,400italic,700italic' rel='stylesheet' type='text/css')
+		script(src="./bower_components/angular/angular.min.js")
+		script(src="./bower_components/angular-sanitize/angular-sanitize.min.js")
+		script(src="./bower_components/jquery/jquery.min.js")
+		//script(src="./bower_components/flickerplate/js/flickerplate.js")
+		script(src="./node_modules/rocket-flicker/js/flicker.min.js")
+		
+		//Add fancyBox main JS and CSS files
+		script(type="text/javascript" src="./public/script/jquery.fancybox.js?v=2.1.5")
+		link(rel="stylesheet" type="text/css" href="./public/css/jquery.fancybox.css?v=2.1.5" media="")
+
+		//Add Button helper (this is optional)
+		link(rel="stylesheet" type="text/css" href="./public/css/jquery.fancybox-buttons.css?v=1.0.5")
+		script(type="text/javascript" src="./public/script/jquery.fancybox-buttons.js?v=1.0.5")
+
+		//Add Thumbnail helper (this is optional)
+		link(rel="stylesheet" type="text/css" href="./public/css/jquery.fancybox-thumbs.css?v=1.0.7")
+		script(type="text/javascript" src="./public/script/jquery.fancybox-thumbs.js?v=1.0.7")
+
+		//Add Media helper (this is optional)
+		script(type="text/javascript" src="./public/script/jquery.fancybox-media.js?v=1.0.6")
+		script(src="./public/script/init.js")
+		script(src="./public/script/controller/controller.js")
+		script(src="./public/script/controller/controlador.js")
+		
+	body
+		include inicio.jade

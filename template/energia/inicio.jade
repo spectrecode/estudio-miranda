@@ -1,0 +1,276 @@
+section.header(ng-controller="bannerCrtl")
+	.inner-header.container
+		.row
+			a(href="index.html")
+				figure
+					img(src="./public/image/logo.png", alt="")
+		.inner-row
+			.row
+				a(href="http://affinitaslegal.com/", target="_blank")
+					figure
+						img(src="./public/image/logo-affinitas.png", alt="")
+				.inner-redes
+					.row
+						a(href="http://mafirma.pe/contactenos/")
+							figure
+								img(src="./public/image/social-contacto.png", alt="")
+					.row
+						a(href="https://twitter.com/MAfirma_legal", target="_blank")
+							figure
+								img(src="./public/image/social-twitter.png", alt="")
+					.row
+						a(href="https://www.linkedin.com/company/miranda-&-amado-abogados", target="_blank")
+							figure
+								img(src="./public/image/social-linkedin.png", alt="")
+					.row
+						a(href="http://mafirma.pe/en/") ENGLISH
+	
+	.header-movil
+		.row.inline
+			.row
+				a(href="http://mafirma.pe/contactenos/")
+					figure
+						img(src="./public/image/social-contacto.png", alt="")
+			.row
+				a(href="https://twitter.com/MAfirma_legal", target="_blank")
+					figure
+						img(src="./public/image/social-twitter.png", alt="")
+			.row
+				a(href="https://www.linkedin.com/company/miranda-&-amado-abogados", target="_blank")
+					figure
+						img(src="./public/image/social-linkedin.png", alt="")
+		.idioma
+			a(href="http://mafirma.pe/en/") ENGLISH
+	.inner-logo
+		.row
+			a(href="index.html")
+				figure
+					img(src="./public/image/logo.png", alt="")
+	.suscribete#suscribete
+		.inner-suscribete
+			h1 BIBLIOTECA 
+				span VIRTUAL
+			p Gracias por su interés en contactarse con nosotros. Por favor, sírvase completar el siguiente formulario con la consulta o solicitud que nos quiere hacer llegar, y la trasladaremos con área correspondiente.
+			form
+				input(type="text",placeholder="Nombre y apellidos")
+				input(type="text",placeholder="E-mail")
+				input(type="text",placeholder="Empresa o universidad")
+				input(type="text",placeholder="Cargo o carrera")
+			.botonera
+				button ENVIAR
+			.cerrar
+				a(href="javascript:void(0)" ng-click="ocultarPopup()") X
+	.mainMenuMovil
+		.inner-option
+			a(href="javascript:void(0)", ng-click="verMenu($event)").menuoption
+				.line
+				.line
+				.line
+			input(type="text",placeholder="BUSCAR")
+		nav#navMovil.nav
+			ul
+				li
+					a(href="http://mafirma.pe/nuestra-firma/") NUESTRA FIRMA
+				li
+					a(href="http://mafirma.pe/abogados/") ABOGADOS
+				li
+					a(href="http://mafirma.pe/areas-de-practica/") ÁREAS DE PRÁCTICA
+				li
+					a(href="http://mafirma.pe/trabaja-en-miranda-y-amado/") TRABAJA EN M&A
+				li
+					a(href="http://mafirma.pe/alianzas/") AFFINITAS
+				li
+					a(href="http://mafirma.pe/distinciones/") DISTINCIONES
+				li
+					a(href="index.html") BIBLIOTECA
+	.inner-menu.ocultar
+		.menu
+			.row
+				form
+					input(type="text",placeholder="BUSCAR")
+
+			.row.menuG
+				ul
+					li
+						a.blanco(href="http://mafirma.pe/nuestra-firma/") NUESTRA FIRMA
+					li
+						a.blanco(href="http://mafirma.pe/abogados/") ABOGADOS
+					li
+						a.active(href="http://mafirma.pe/areas-de-practica/") ÁREAS DE PRÁCTICA
+					li
+						a.blanco(href="http://mafirma.pe/trabaja-en-miranda-y-amado/") TRABAJA EN M&A
+					li
+						a.blanco(href="http://mafirma.pe/alianzas/") AFFINITAS
+					li
+						a.blanco(href="http://mafirma.pe/distinciones/") DISTINCIONES
+					li
+						a.blanco(href="index.html") BIBLIOTECA
+section.energia(ng-controller="desplegarCrtl")
+	.container.inner-energia
+		.row.ocultar#texto
+			.desplegar
+				a(href=""  ng-click="desplegarTexto()")
+					figure
+						img(src="./public/image/cerrar.jpg", alt="")
+			.inner-contenido.sombra
+				h1 ENERGÍA
+				p Brindamos asesoría de alta calidad en los proyectos de energía de mayor envergadura, complejidad e innovación del mercado. Proveemos un enfoque integral que reúne toda la experiencia de nuestros abogados en varias áreas de práctica, de manera que brindamos todo el apoyo necesario a los clientes que buscan desarrollar y financiar proyectos. Somos una de las pocas firmas en Perú con los recursos y el conocimiento necesario para manejar efectivamente las grandes transacciones y financiamientos del sector energético, procesos que involucran además asuntos regulatorios complejos.
+				p.naranja UNA MUESTRA DE NUESTRA EXPERIENCIA
+				ul
+					li 
+						p Asesoría a Kallpa Generación en la adquisición de la planta termoeléctrica Las Flores, de 190 MW de potencia y anteriormente de propiedad de Duke Energy Egenor.
+					li
+						p Asesoría a Isolux Infrastructure con el contrato de concesión para el diseño, financiamiento, construcción, operación y mantenimiento de la línea de transmisión 220 kv Moyobamba-Iquitos, ante PROINVERSIÓN.
+					li
+						p Asesoría a Enersur en la obtención de un préstamo de USD 290 millones de Credicorp Capital Servicios Financieros y BBVA Banco Continental.
+				p.naranja2 UNA MUESTRA DE NUESTRA EXPERIENCIA
+				.inner-experiencia
+					.row
+						.info-socio
+							a(href="http://mafirma.pe/abogados/juan-luis-avendano-cisneros/")
+								| Avendaño Cisneros, Juan Luis	
+							span
+								| SOCIO
+						.info-socio
+							a(href="http://mafirma.pe/abogados/rafael-corzo-de-la-colina/")
+								| Corzo de la Colina, Rafael
+							span
+								| SOCIO
+						.info-socio
+							a(href="http://mafirma.pe/abogados/roberto-maclean-martins/")
+								| MacLean Martins, Roberto
+							span
+								| SOCIO
+						.info-socio
+							a(href="http://mafirma.pe/abogados/gabriel-boucher-calamo/")
+								| Boucher Cálamo, Gabriel
+							span
+								| ASOCIADO
+						.info-socio
+							a(href="http://mafirma.pe/abogados/alvaro-del-valle-roeder/")
+								| del Valle Roeder, Álvaro
+							span
+								| ASOCIADO
+						.info-socio
+							a(href="http://mafirma.pe/abogados/josue-jaen-palomino/")
+								| Jaén Palomino, Josué
+							span
+								| ASOCIADO
+					//.row
+						p SOCIO 
+						p SOCIO
+						p SOCIO
+						p ASOCIADA
+						p ASOCIADO
+						p ASOCIADO
+						p ASOCIADO
+						p ASOCIADO
+		.filtros
+			.row
+				form
+					select(name="filtros")
+						option(value="") Año
+						option(value="") 2016
+						option(value="") 2015
+						option(value="") 2014
+						option(value="") 2013			
+					select(name="filtros")
+						option(value="") Mes
+						option(value="") Diciembre
+						option(value="") Noviembre
+						option(value="") Octubre
+						option(value="") Setiembre
+					select(name="filtros")
+						option(value="") Tipo
+						option(value="") Todos
+						option(value="") Boletines
+						option(value="") Transacciones 
+						option(value="") Artículos 
+						option(value="") Noticias 
+					button BUSCAR
+				.mesa
+					.row
+						.inner-text
+							p IFLR  - AMERICAS AWARDS
+							span Octubre, 2016
+						figure
+							img(src="./public/image/libro.png", alt="")
+						.plus
+							a(class="fancybox" href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="")
+								img(src="./public/image/lupa.png")
+							figure
+								a(href="./e-book/demo", target="_blank")
+									img(src="./public/image/descarga.png", alt="")
+					.row
+						.inner-text
+							p IFLR  - AMERICAS AWARDS
+							span Octubre, 2016
+						figure
+							img(src="./public/image/libro.png", alt="")
+						.plus
+							a(class="fancybox" href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="")
+								img(src="./public/image/lupa.png")
+							figure
+								a(href="./e-book/demo", target="_blank")
+									img(src="./public/image/descarga.png", alt="")
+				.mesa
+					.row
+						.inner-text
+							p IFLR  - AMERICAS AWARDS
+							span Octubre, 2016
+						figure
+							img(src="./public/image/libro.png", alt="")
+						.plus
+							a(class="fancybox" href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="")
+								img(src="./public/image/lupa.png")
+							figure
+								a(href="./e-book/demo", target="_blank")
+									img(src="./public/image/descarga.png", alt="")
+					.row
+						.inner-text
+							p IFLR  - AMERICAS AWARDS
+							span Octubre, 2016
+						figure
+							img(src="./public/image/libro.png", alt="")
+						.plus
+							a(class="fancybox" href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="")
+								img(src="./public/image/lupa.png")
+							figure
+								a(href="./e-book/demo", target="_blank")
+									img(src="./public/image/descarga.png", alt="")
+				//.paginado
+					a.active(href="javascript:void(0)") 1
+					a(href="javascript:void(0)") 2
+					a(href="javascript:void(0)") 3
+					a(href="javascript:void(0)")
+						figure
+							img(src="./public/image/right.png", alt="")
+	.footer-movil
+		div
+			h3 CONTACTO
+			p Av. José Larco 1301 Piso 20,
+				br
+				| Torre Parque Mar
+				br
+				| Miraflores, Lima 18
+				br
+				| Lima - Perú
+			p
+				a(href="mailto:abogado@mafirma.com.pe") abogado@mafirma.com.pe
+			p Teléfono
+				br
+				| +51 1 610 4747
+			p Fax
+				br
+				| +51 1 610 4748
+	.footer-bottom
+		.inner-links
+			.row
+				a(href="http://mafirma.pe/noticias/") Noticias
+				a(href="https://informativo.mafirma.pe/") Publicaciones
+				a(href="http://mafirma.pe/contactenos/") Contáctenos
+				a(href="https://owa.mafirma.com.pe/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fowa.mafirma.com.pe%2fowa%2f") Correo web
+				a(href="https://citrix.mafirma.com.pe/vpn/index.html",target="_blank") Extranet M&A
+				a.nobr(href="http://mafirma.pe/smartlaboral/") SmartLABORAL
+			.row
+				p Todos los Derechos Reservados © 2017. Miranda & Amado.

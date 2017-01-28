@@ -1,0 +1,326 @@
+#texto
+	display none
+	width 480px
+	@media screen and (min-width: 992px)
+		display block
+	&.cerrar
+		width 0
+		.inner-contenido
+			display none
+			&.sombra
+				border-right 1px solid red
+section.proyectos
+	background-image transparent//url("../image/fondo-libros.jpg")
+	background-repeat no-repeat
+	background-size cover
+	padding-bottom 0px
+	padding-top 50px
+	.inner-contenido
+		&.sombra
+			background url(../image/SHADOW.png) right 48px no-repeat
+			padding-right 35px
+	.inner-energia
+		display block
+		@media screen and (min-width:992px)
+			display flex
+			flex-flow row wrap
+			justify-content space-between
+			padding-bottom 30px
+		.borde
+			background-image url("../image/border.png")
+			background-repeat no-repeat
+			background-position right
+		.row
+			position relative
+			width 500px
+			padding-top 50px
+			@media screen and (min-width:992px)
+				position relative
+				width 480px
+				padding-top 50px
+			&:last-child
+				width 100%
+				@media screen and (min-width:992px)
+					width 445px
+				@media screen and (min-width:1200px)
+					width 480px
+			h1
+				font-size 48px
+				font-weight 100
+				font-family "Roboto"
+				color #435663
+			p
+				font-size 14px
+				font-weight 400
+				font-family "Roboto"
+				color #696969
+				text-align justify
+				padding-top 24px
+			.borde
+				padding-right 30px
+			.naranja
+				color #C27928
+				font-size 14px
+				font-weight 700
+				font-family "Roboto"
+				padding 18px 0px
+			.naranja2
+				color #C27928
+				font-size 14px
+				font-weight 700
+				font-family "Roboto"
+			ul
+				li
+					list-style-type square
+					color #C27928
+					padding-top 5px
+					p
+						color #696969
+						font 13px robotoregular
+						padding-top 0px
+						justify-content justify
+			form
+				select
+					width 98px
+					height 37px
+					color #898989
+					font 13px robotoregular
+					border 1px solid #435664
+					padding-left 8px
+				button
+					background #C5CCD0
+					border-radius 2px
+					border 1px solid #435664
+					color #445664
+					padding-top 5px
+					padding-bottom 5px
+					padding-left 8px
+					padding-right 8px
+					font 13px robotomedium
+					width 105px
+					height 37px
+			.inner-experiencia
+				display flex
+				flex-flow row wrap
+				justify-content space-between
+				.row
+					padding 0px
+					width 100%
+					.info-socio
+						align-items center
+						display flex
+						flex-flow row wrap
+						justify-content flex-start
+						&:first-child
+							margin-top 20px
+						a
+							font-weight 700
+							font-family "Roboto"
+							font-size 14px
+							color #435663
+							display block
+							text-decoration none
+							line-height 1.5em
+							width 270px
+							&:hover
+								text-decoration underline
+						span
+							font-weight 400
+							font-family "Roboto"
+							font-size 14px
+							color #435663
+					p
+						padding-top 10px
+			a.cerrar
+				height 25px
+				width 90px
+				text-decoration none
+				text-align center
+				background #435663
+				color blanco
+				transform rotate(270deg)
+				position absolute
+				right -50px
+				bottom 280px
+				display inline-block
+				figure
+					display inline-block
+					position absolute
+					bottom 0
+					left 0
+			.mesa
+				display flex
+				flex-flow row wrap
+				justify-content center
+				background none
+				background-size 100%
+				width 100%
+				@media screen and (min-width:992px)
+					width 440px
+					display flex
+					flex-flow row wrap
+					justify-content center
+					background url("../image/mesa.png") no-repeat bottom left
+					background-size 100%
+				@media screen and (min-width:1200px)
+					width 470px
+					display flex
+					flex-flow row wrap
+					justify-content center
+					background url("../image/mesa.png") no-repeat bottom left
+					background-size 100%
+				.row
+					width 170px
+					position relative
+					padding-bottom 19px
+					padding-top 30px
+					margin-left 30px
+					.inner-text
+						padding-bottom 15px
+						p
+							padding-top 0px
+				p
+					font 14px robotoregular
+					color #435663
+				span
+					font 13px robotoregular
+					color #808080
+				.plus
+					margin-left 150px
+					bottom 90px
+					position absolute
+					@media screen and (min-width:992px)
+						margin-left 125px
+						bottom 90px
+						position absolute
+			.paginado
+				text-align center
+				padding-top 30px
+				width auto
+				@media screen and (min-width:992px)
+					text-align center
+					padding-top 30px
+					width 470px
+				a
+					text-decoration none
+					font 20px robotomedium
+					color #878787
+					margin 0px 10px
+					padding 5px 10px
+					&:hover
+						color blanco
+						background #435663
+						font 20px robotomedium
+					&:last-child
+						color #878787
+						margin 0
+						display inline-block
+						padding 0
+						&:hover
+							background transparent
+				.active
+					color blanco
+					background #435663
+					padding 5px 10px
+					margin 0px 5px
+					font 20px robotomedium
+		.ocultar
+			.desplegar
+				display none
+				@media screen and (min-width:1200px)
+					position absolute
+					right -9px
+					top 270px
+					display block
+				
+		.filtros
+			margin-top 30px
+			display flex
+			flex-flow row wrap
+			justify-content center
+			@media screen and (min-width:992px)
+				display flex
+			.row
+				padding 10px
+				text-align center
+				@media screen and (min-width:992px)
+					padding-top 20px
+					text-align left
+				button
+					background #445664
+					font 14px robotomedium
+					width 145px
+					height 40px
+					color blanco
+					border none
+				form
+					select
+						width 150px
+						border 1px solid #435664
+						height 40px
+						font 13px robotoregular
+						color #898989
+						padding-left 5px
+						margin 5px 4px
+						@media screen and (min-width:992px)
+							width 98px
+							border 1px solid #435664
+							height 37px
+							font 13px robotoregular
+							color #898989
+							padding-left 8px
+					button
+						background #C5CCD0
+						border-radius 2px
+						border 1px solid #435664
+						color #445664
+						cursor pointer
+						padding-top 10px
+						padding-bottom 11px
+						padding-left 15px
+						padding-right 15px
+						font 13px robotomedium
+						width 150px
+						height 40px
+						margin-top 15px
+						@media screen and (min-width:992px)
+							background #C5CCD0
+							border-radius 2px
+							border 1px solid #435664
+							color #445664
+							cursor pointer
+							padding-top 10px
+							padding-bottom 11px
+							padding-left 15px
+							padding-right 15px
+							font 13px robotomedium
+							width 105px
+							height 37px
+							margin-top 0px
+			
+.footer-movil
+	background #435663
+	display flex
+	flex-flow row wrap
+	justify-content center
+	div
+		padding 30px 0px 20px
+		h3
+			color blanco
+			font 30px robotoregular
+			font-weight 900
+			line-height 30px
+			margin-bottom 20px
+			text-align center
+		p
+			color blanco
+			font 14px robotoregular
+			font-weight 400
+			margin-bottom 20px
+			text-align center
+			a
+				text-decoration none
+				font 18px robotoregular
+				font-weight 800
+	@media screen and (min-width:992px)
+		display none
