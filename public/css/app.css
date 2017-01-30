@@ -1171,28 +1171,52 @@ input[type="number"].error {
     -webkit-justify-content: space-between;
     justify-content: space-around;
     position: relative;
-    left: 6%;
+    left: 8%;
   }
 }
 .header .inicio .container .innerLibros .filtros .row {
   padding: 10px;
   text-align: center;
-}
-@media screen and (min-width: 992px) {
-  .header .inicio .container .innerLibros .filtros .row {
-    padding-top: 20px;
-    text-align: left;
-  }
+  position: relative;
 }
 @media screen and (max-width: 992px) {
+  .header .inicio .container .innerLibros .filtros .row:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: -170px;
+  }
   .header .inicio .container .innerLibros .filtros .row {
     left: 75px;
     position: relative;
   }
-  .header .inicio .container .innerLibros .filtros .row > button{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  .header .inicio .container .innerLibros .filtros .row form button {
+    right: 88px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 752px) {
+  .header .inicio .container .innerLibros .filtros .row {
+    left: 0px;
+  }
+  .header .inicio .container .innerLibros .filtros .row:last-child {
+    left: 0;
+  }
+  .header .inicio .container .innerLibros .filtros .row form button {
+    right: 0;
+  }
+  .header .inicio .container .innerLibros .filtros .row:last-child button {
+    right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header .inicio .container .innerLibros .filtros .row:last-child {
+    border-left: 2px solid #445664;
+    margin-left: 12px;
+  }
+  .header .inicio .container .innerLibros .filtros .row {
+    padding-top: 20px;
+    text-align: left;
   }
 }
 .header .inicio .container .innerLibros .filtros .row button {
@@ -1223,7 +1247,9 @@ input[type="number"].error {
     color: #898989;
     padding-left: 15px;
   }
+
 }
+
 .header .inicio .container .innerLibros .filtros .row form button {
   background: #c5ccd0;
   border-radius: 2px;
@@ -1245,6 +1271,9 @@ input[type="number"].error {
   }
 }
 @media screen and (min-width: 992px) {
+  .header .inicio .container .innerLibros .filtros .row > button {
+    margin-left: 40px;
+  }
   .header .inicio .container .innerLibros .filtros .row form button {
     background: #c5ccd0;
     border-radius: 2px;
@@ -1263,17 +1292,17 @@ input[type="number"].error {
     top: 0;
   }
 }
-.header .inicio .container .innerLibros .filtros .linea {
+/*.header .inicio .container .innerLibros .filtros .linea {
   display: none;
 }
 @media screen and (min-width: 992px) {
   .header .inicio .container .innerLibros .filtros .linea {
     display: block;
-    border-left: 2px solid #445664;
-    width: 2px;
+    border-right: 2px solid #445664;
+    width: 95px;
     height: 80px;
   }
-}
+}*/
 .header .inicio .container .innerLibros .mesa {
   display: -webkit-box;
   display: -moz-box;
