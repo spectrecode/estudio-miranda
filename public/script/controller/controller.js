@@ -31,10 +31,16 @@ app.controller('desplegarCrtl', [
         $(".filtros").addClass("cerrar");
         $(".inner-energia .filtros").fadeOut("slow");
         $("#texto").css("width", "100%");
+          setTimeout(function(){
+            $(".desplegar figure").addClass("form-error");
+            $(".abrir figure").removeClass("form-error");
+          }, 500);
+
       } else {
         $(".filtros").removeClass("cerrar");
         $(".inner-energia .filtros").fadeIn("slow");
         $("#texto").css("width", "50%");
+        $(".desplegar figure").toggleClass("form-error");
         // $(".inner-energia .filtros .mesa").css("width", "auto");
       }
     };

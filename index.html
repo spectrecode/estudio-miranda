@@ -30,6 +30,7 @@
     <script src="./public/script/init.js"></script>
     <script src="./public/script/controller/controller.js"></script>
     <script src="./public/script/controller/controlador.js"></script>
+    <script type="text/javascript" src="./coffeescript/app.js"></script>
   </head>
   <body>
     <section ng-controller="bannerCrtl" class="header">
@@ -69,12 +70,13 @@
       <div id="suscribete" class="suscribete">
         <div class="inner-suscribete">
           <h1>BIBLIOTECA <span>VIRTUAL</span></h1>
-          <p>Gracias por tu interés en suscribirte a nuestros boletines. Por favor, completa el siguiente formulario y que tipo de boletín desea recibir.</p>
+          <p>Gracias por tu interés en suscribirte a nuestros boletines. Por favor, completa el siguiente formulario.</p>
           <form>
             <input type="text" placeholder="Nombre y apellidos">
             <input type="text" placeholder="E-mail">
             <input type="text" placeholder="Empresa o universidad">
             <input type="text" placeholder="Cargo o carrera">
+            <p>Tipo de boletín que desea recibir :</p>
             <p><input type="radio" name="boletin" value="1"> Informativo Laboral</p>
             <p><input type="radio" name="boletin" value="2"> Informativo Concursal</p>
             <p><input type="radio" name="boletin" value="3"> Informativo Ambiental</p>
@@ -159,22 +161,22 @@
             <div class="filtros">
               <div class="row">
                 <form>
-                  <select name="filtros">
+                  <select name="area" id="area">
                     <option value="">Área</option>
                     <option value="">Administración</option>
                     <option value="">Marketing</option>
                   </select>
-                  <select name="filtros">
-                    <option value="">Año</option>
-                    <option value="">2017</option>
-                    <option value="">2016</option>
+                  <select name="anio" id="anio">
+                    <option value="0">Año</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
                   </select>
-                  <select name="filtros">
+                  <select name="mes" id="mes">
                     <option value="">Mes</option>
                     <option value="">Enero</option>
                     <option value="">Diciembre</option>
                   </select>
-                  <select name="filtros">
+                  <select name="publicaciones" id="publicaciones">
                     <option value="">Tipo</option>
                     <option value="">Todos</option>
                     <option value="">Boletines</option>

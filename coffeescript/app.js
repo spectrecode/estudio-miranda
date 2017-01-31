@@ -19,12 +19,15 @@ $(document).ready(function(){
           }
         });
     });
-    // $(".desplegar").click(function(){
-    //   if($("#texto").width() != 0) {
-    //     $(".inner-contenido").fadeOut()
-    //   } 
-    //   else {
-    //     $(".inner-contenido").fadeIn()
-    //   }
-    // })
+
+  $("#anio").change(function(){
+      var valorAnio;
+      valorAnio = $(this).val();
+      if (valorAnio == "2017") {
+        $("#mes").html("<option>Enero</option>");
+      }
+      else {
+        $("#mes").html("<option>Diciembre</option>"); 
+      }
+  })
 });

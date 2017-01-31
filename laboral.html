@@ -137,8 +137,16 @@
     <section ng-controller="desplegarCrtl" class="energia">
       <div class="container inner-energia">
         <div id="texto" class="row ocultar">
-          <div class="desplegar"><a href="" ng-click="desplegarTexto()">
-              <figure><img src="./public/image/cerrar.png" alt=""></figure></a></div>
+          <div class="desplegar">
+              <a href="" ng-click="desplegarTexto()">
+                <figure><img src="./public/image/cerrar.png" alt=""></figure>
+              </a>
+          </div>
+          <div class="desplegar abrir">
+              <a href="" ng-click="desplegarTexto()">
+                <figure class="form-error"><img src="./public/image/abrir.png" alt=""></figure>
+              </a>
+          </div>
           <div class="inner-contenido sombra">
             <h1>LABORAL</h1>
             <p>Brindamos asesoría de alta calidad en los proyectos de energía de mayor envergadura, complejidad e innovación del mercado. Proveemos un enfoque integral que reúne toda la experiencia de nuestros abogados en varias áreas de práctica, de manera que brindamos todo el apoyo necesario a los clientes que buscan desarrollar y financiar proyectos. Somos una de las pocas firmas en Perú con los recursos y el conocimiento necesario para manejar efectivamente las grandes transacciones y financiamientos del sector energético, procesos que involucran además asuntos regulatorios complejos.</p>
@@ -182,17 +190,17 @@
         <div class="filtros">
           <div class="row">
             <form>
-              <select name="filtros">
-                <option value="">Año</option>
-                <option value="">2017</option>
-                <option value="">2016</option>
+              <select name="anio" id="anio">
+                <option value="0">Año</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
               </select>
-              <select name="filtros">
+              <select name="mes" id="mes">
                 <option value="">Mes</option>
                 <option value="">Enero</option>
                 <option value="">Diciembre</option>
               </select>
-              <select name="filtros">
+              <select name="publicaciones" id="publicaciones">
                 <option value="">Tipo</option>
                 <option value="">Todos</option>
                 <option value="">Boletines</option>
@@ -207,7 +215,7 @@
                 <div class="inner-text">
                   <p>IFLR  - AMERICAS AWARDS</p><span>Octubre, 2016</span>
                 </div>
-                <figure><img src="./public/image/libro.png" alt="" width="70%"></figure>
+                <figure><img src="./public/image/laboral.png" alt="" width="70%"></figure>
                 <div class="plus">
 <!--                   <a href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="" class="fancybox"><img src="./public/image/lupa.png"></a> -->
                   <figure><a href="./e-book/demo" target="_blank"><img src="./public/image/lupa.png"></a></figure>
@@ -217,7 +225,7 @@
                 <div class="inner-text">
                   <p>IFLR  - AMERICAS AWARDS</p><span>Octubre, 2016</span>
                 </div>
-                <figure><img src="./public/image/libro.png" alt="" width="70%"></figure>
+                <figure><img src="./public/image/laboral.png" alt="" width="70%"></figure>
                 <div class="plus">
 <!--                   <a href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="" class="fancybox"><img src="./public/image/lupa.png"></a> -->
                   <figure><a href="./e-book/demo" target="_blank"><img src="./public/image/lupa.png"></a></figure>
@@ -229,7 +237,7 @@
                 <div class="inner-text">
                   <p>IFLR  - AMERICAS AWARDS</p><span>Octubre, 2016</span>
                 </div>
-                <figure><img src="./public/image/libro.png" alt="" width="70%"></figure>
+                <figure><img src="./public/image/laboral.png" alt="" width="70%"></figure>
                 <div class="plus">
 <!--                   <a href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="" class="fancybox"><img src="./public/image/lupa.png"></a> -->
                   <figure><a href="./e-book/demo" target="_blank"><img src="./public/image/lupa.png"></a></figure>
@@ -239,7 +247,7 @@
                 <div class="inner-text">
                   <p>IFLR  - AMERICAS AWARDS</p><span>Octubre, 2016</span>
                 </div>
-                <figure><img src="./public/image/libro.png" alt="" width="70%"></figure>
+                <figure><img src="./public/image/laboral.png" alt="" width="70%"></figure>
                 <div class="plus">
 <!--                   <a href="./public/image/indice/indice1.png" data-fancybox-group="gallery" title="" class="fancybox"><img src="./public/image/lupa.png"></a> -->
                   <figure><a href="./e-book/demo" target="_blank"><img src="./public/image/lupa.png"></a></figure>
