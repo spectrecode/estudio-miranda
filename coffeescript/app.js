@@ -30,4 +30,14 @@ $(document).ready(function(){
         $("#mes").html("<option>Diciembre</option>"); 
       }
   })
+  $("#anio").change(function(){
+      var valorAnio;
+      valorAnio = $(this).val();
+      if (valorAnio == "2017") {
+        $("#mes").html("<option>Enero</option>");
+      }
+      else {
+        $("#mes").html("<option>Diciembre</option>"); 
+      }
+  })
 });

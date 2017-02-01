@@ -2078,6 +2078,7 @@ section.energia .inner-energia .row .mesa .row .inner-text {
 }
 section.energia .inner-energia .row .mesa .row .inner-text p {
   padding-top: 0px;
+  text-align: center;
 }
 section.energia .inner-energia .row .mesa p {
   font: 14px robotoregular;
