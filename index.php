@@ -1,3 +1,13 @@
+<?php
+include('config/conexion.php');
+include('modelo/funciones.php');
+//include('modelo/usuario.php');
+include('modelo/biblioteca.php');
+$objbiblio   = new Bilioteca("localhost","abogados_wp","abogados_wp","M&a2015@@");
+$resultado = $objbiblio->listadoCategoriawp();
+var_dump($resultado);
+
+?>
 <!DOCTYPE html>
 <html lang="es" ng-app="miranda">
   <head>
