@@ -1,4 +1,4 @@
-app.controller 'inmobiliariaCrtl',['$scope','$http','$timeout','$location',(scope,http,timeout,location2) ->
+app.controller 'bibliotecaCrtl',['$scope','$http','$timeout','$location',(scope,http,timeout,location2) ->
 	scope.arrarea = []
 	scope.arrarea = {}
 	scope.arranio = []
@@ -9,7 +9,7 @@ app.controller 'inmobiliariaCrtl',['$scope','$http','$timeout','$location',(scop
 	scope.selectedAnio = []
 	scope.selectedDist = []
 	scope.formData = new FormData()
-	scope.url = "../controllers/edificio/procesar.php"
+	scope.url = "../controller/edificio/procesar.php"
 	scope.ocultarmensaje = ()->
 		$("#new_post .msje").fadeOut('slow')
 		if $("#new_post .msje .alert").hasClass('alert-success')
@@ -21,17 +21,13 @@ app.controller 'inmobiliariaCrtl',['$scope','$http','$timeout','$location',(scop
 		scope.arranio = {}
 		scope.arrmes = {}
 
-		url = '../controllers/biblioteca/area.php'
+		url = 'controller/biblioteca/area.php'
 		result = http.post(url)
-		result.success (response) ->			
-			console.log response
-			scope.arrarea = jQuery.parseJSON(response.arr)
+		result.then (response) ->
+			scope.arrarea = response.data.arr
 			console.log scope.arrarea
-			scope.selectedDep = scope.arrarea[0] 
-			console.log scope.selectedDep
-			return
-		result.error (error) ->
-			console.log(error)
+			scope.selectedArea = scope.arrarea[0]
+			##console.log scope.selectedArea
 			return
 		return
 	scope.cargarProvincia = ()->
@@ -79,79 +75,7 @@ app.controller 'inmobiliariaCrtl',['$scope','$http','$timeout','$location',(scop
 		else
 			scope.arrmes = {}
 		return
-	scope.initUpload = ()->
-		url = '../controllers/imagen/subida.php'
-		$("#uploader").plupload({
-			runtimes : 'html5,flash,silverlight,html4',
-			url : url,
-			## Maximum file size
-			max_file_size : '2mb',
-
-			chunk_size: '1mb',
-
-			## Resize images on clientside if we can
-			resize : {
-				width : 200, 
-				height : 200, 
-				quality : 90,
-				crop: true ## crop to exact dimensions
-			},
-
-			## Specify what files to browse for
-			filters : [
-				{
-					title : "Image files",
-					extensions : "jpg,gif,png"
-				},
-				{
-					title : "Zip files",
-					extensions : "zip,avi"
-				}
-			],
-
-			## Rename files by clicking on their titles
-			rename: true,
-
-			## Sort files
-			sortable: true,
-
-			## Enable ability to drag'n'drop files onto the widget (currently only HTML5 supports that)
-			dragdrop: true,
-
-			## Views to activate
-			views: {
-				list: true,
-				thumbs: true, ## Show thumbs
-				active: 'thumbs'
-			},
-			## Flash settings
-			flash_swf_url : '/plupload/js/Moxie.swf',
-
-			## Silverlight settings
-			silverlight_xap_url : '/plupload/js/Moxie.xap',
-
-			init : {
-				FileUploaded: (up, file, info) ->
-					## Called when file has finished uploading
-					console.log file
-					console.log info
-					console.log up
-					return
-				FilesRemoved: (up, files) ->
-					##Called when files are removed from queue
-					##log('[FilesRemoved]');
-					plupload.each(files, (file) ->
-						console.log file
-						return
-					)
-					return
-			}
-		})
-		## fin de la funcion
-		return
-	timeout scope.iniciarlizar, 500
-	scope.cargarDepartamento()
-	scope.initUpload()
+	scope.cargarArea()
 	## Fin del controlador
 	return
 ]

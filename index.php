@@ -1,13 +1,3 @@
-<?php
-include('config/conexion.php');
-include('modelo/funciones.php');
-//include('modelo/usuario.php');
-include('modelo/biblioteca.php');
-$objbiblio   = new Bilioteca("localhost","abogados_wp","abogados_wp","M&a2015@@");
-$resultado = $objbiblio->listadoCategoriawp();
-var_dump($resultado);
-
-?>
 <!DOCTYPE html>
 <html lang="es" ng-app="miranda">
   <head>
@@ -164,17 +154,14 @@ var_dump($resultado);
           </li>
         </ul>
       </div>
-      <div class="inicio">
+      <div class="inicio" ng-controller="bibliotecaCrtl">
         <div class="container">
           <div class="innerLibros">
             <p>Filtrar por:</p>
             <div class="filtros">
               <div class="row">
                 <form>
-                  <select name="area" id="area">
-                    <option value="">Área</option>
-                    <option value="">Administración</option>
-                    <option value="">Marketing</option>
+                  <select name="area" id="area" ng-options="arrare as arrare.name for arrare in arrarea track by arrare.id" ng-model="selectedArea" ng-change="cargarProvincia()" style="width: 200px">
                   </select>
                   <select name="anio" id="anio">
                     <option value="0">Año</option>
